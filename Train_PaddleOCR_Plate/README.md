@@ -1,3 +1,3 @@
 ### 项目已经迁移
 * 迁移后的gitee开源地址：https://gitee.com/yuturuishi/PaddleOCR_Plate
-* 迁移后的github开源地址：https://github.com/beixiaocai/PaddleOCR_Plate
+* 迁移后的github开源地址：https://github.com/yuturuishi/PaddleOCR_Plate

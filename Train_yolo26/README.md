@@ -2,7 +2,7 @@
 * 官网：https://www.yuturuishi.com
 * 微信：yuturuishi
 * gitee开源地址：https://gitee.com/yuturuishi/BXC_AutoML
-* github开源地址：https://github.com/beixiaocai/BXC_AutoML
+* github开源地址：https://github.com/yuturuishi/BXC_AutoML
 
 ### 安装Python
 * Windows实测Python3.12，建议3.10~3.12；注意：ultralytics 8.4.x 要求 Python>=3.9，老Python3.8装不上新版本

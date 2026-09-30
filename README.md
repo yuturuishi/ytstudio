@@ -1,4 +1,4 @@
-# BXC_AutoML
+# ytstudio
 
 > 宇图瑞视（yuturuishi）开源 AI 算法训练框架集合 —— 覆盖目标检测、图像 / 视频 / 音频分类、人脸识别、车牌识别等任务，并提供瑞芯微（Rockchip）边缘设备的模型转换（onnx → rknn）全链路。
 
@@ -6,12 +6,12 @@
 |---|---|
 | 官网 | https://www.yuturuishi.com |
 | 微信 | yuturuishi |
-| Gitee | https://gitee.com/yuturuishi/BXC_AutoML |
-| GitHub | https://github.com/yuturuishi/BXC_AutoML |
+| Gitee | https://gitee.com/yuturuishi/ytstudio |
+| GitHub | https://github.com/yuturuishi/ytstudio |
 
 ## 简介
 
-BXC_AutoML 是一套面向 AI 视觉与音频算法的训练与部署工具集合。它以**模块化**方式组织：每个任务类型对应一个独立训练模块，配套免费公开数据集与示例脚本，开发者可快速完成「数据准备 → 模型训练 → 边缘部署」的完整流程。对于需要落地到瑞芯微硬件的场景，使用 `onnx2rknn` 即可将训练产出的 onnx 模型转换为 rknn 格式，直接在边缘端加速推理。
+ytstudio 是一套面向 AI 视觉与音频算法的训练与部署工具集合。它以**模块化**方式组织：每个任务类型对应一个独立训练模块，配套免费公开数据集与示例脚本，开发者可快速完成「数据准备 → 模型训练 → 边缘部署」的完整流程。对于需要落地到瑞芯微硬件的场景，使用 `onnx2rknn` 即可将训练产出的 onnx 模型转换为 rknn 格式，直接在边缘端加速推理。
 
 ## 功能模块
 

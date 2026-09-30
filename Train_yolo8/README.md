@@ -1,8 +1,8 @@
 ### Train_yolo8
 * 官网：https://www.yuturuishi.com
 * 微信：yuturuishi
-* gitee开源地址：https://gitee.com/yuturuishi/BXC_AutoML
-* github开源地址：https://github.com/yuturuishi/BXC_AutoML
+* gitee开源地址：https://gitee.com/yuturuishi/ytstudio
+* github开源地址：https://github.com/yuturuishi/ytstudio
 
 
 ### 安装Python

@@ -66,9 +66,9 @@ pip install 3rdparty-arm/rknn_toolkit2-2.3.0-cp38-cp38-manylinux_2_17_aarch64.ma
 
 ### 第二步（模型转换：onnx模型->rknn模型）
 * 首先，看到本文档的你，请务必清楚的知道：用于转换rknn的onnx，并不是通用的onnx，关于这一点，如果你还是不明白，请首先查看如下文档
-* 训练rk版yolo5并获得onnx模型文档：https://gitee.com/yuturuishi/BXC_AutoML/tree/master/Train_rk_yolo5
-* 训练rk版yolo8并获得onnx模型文档：https://gitee.com/yuturuishi/BXC_AutoML/tree/master/Train_rk_yolo8
-* 训练rk版yolo11并获得onnx模型文档：https://gitee.com/yuturuishi/BXC_AutoML/tree/master/Train_rk_yolo11
+* 训练rk版yolo5并获得onnx模型文档：https://gitee.com/yuturuishi/ytstudio/tree/master/Train_rk_yolo5
+* 训练rk版yolo8并获得onnx模型文档：https://gitee.com/yuturuishi/ytstudio/tree/master/Train_rk_yolo8
+* 训练rk版yolo11并获得onnx模型文档：https://gitee.com/yuturuishi/ytstudio/tree/master/Train_rk_yolo11
 
 * 接下来，如果你已经训练并获得了可用于转换rknn的onnx，那就开始进行模型转换吧
 ~~~

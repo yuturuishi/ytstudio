@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 # 作者信息
-MAINTAINER bxc<bilibili_bxc@126.com>
+MAINTAINER yuturuishi
 
 #切换到root用户
 USER root

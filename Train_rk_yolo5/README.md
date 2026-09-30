@@ -1,8 +1,8 @@
 ### Train_rk_yolo5
 * 官网：https://www.yuturuishi.com
 * 微信：yuturuishi
-* gitee开源地址：https://gitee.com/yuturuishi/BXC_AutoML
-* github开源地址：https://github.com/yuturuishi/BXC_AutoML
+* gitee开源地址：https://gitee.com/yuturuishi/ytstudio
+* github开源地址：https://github.com/yuturuishi/ytstudio
 
 
 ### 第一步（安装模型训练环境）
@@ -70,7 +70,7 @@ python export.py --rknpu --weight yolov5n.pt
 
 ~~~
 //将rk设备支持的onnx转换为rknn模型（参考文档）
-https://gitee.com/yuturuishi/BXC_AutoML/tree/master/onnx2rknn
+https://gitee.com/yuturuishi/ytstudio/tree/master/onnx2rknn
 
 ~~~
 

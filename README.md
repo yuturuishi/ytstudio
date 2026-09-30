@@ -45,9 +45,9 @@ ytstudio 是一套面向 AI 视觉与音频算法的训练与部署工具集合�
 
 部分训练框架已拆分为独立仓库进行维护，点击跳转：
 
-- **BXC_AudioNet**（音频分类）：[Gitee](https://gitee.com/yuturuishi/BXC_AudioNet) · [GitHub](https://github.com/yuturuishi/BXC_AudioNet)
-- **BXC_ResNet**（图像分类）：[Gitee](https://gitee.com/yuturuishi/BXC_ResNet) · [GitHub](https://github.com/yuturuishi/BXC_ResNet)
-- **BXC_VideoNet**（视频分类）：[Gitee](https://gitee.com/yuturuishi/BXC_VideoNet) · [GitHub](https://github.com/yuturuishi/BXC_VideoNet)
+- **AudioNet**（音频分类）：[Gitee](https://gitee.com/yuturuishi/AudioNet) · [GitHub](https://github.com/yuturuishi/AudioNet)
+- **ResNet**（图像分类）：[Gitee](https://gitee.com/yuturuishi/ResNet) · [GitHub](https://github.com/yuturuishi/ResNet)
+- **VideoNet**（视频分类）：[Gitee](https://gitee.com/yuturuishi/VideoNet) · [GitHub](https://github.com/yuturuishi/VideoNet)
 - **XcFaceNet**（人脸识别）：[Gitee](https://gitee.com/yuturuishi/XcFaceNet) · [GitHub](https://github.com/yuturuishi/XcFaceNet)
 - **PaddleOCR_Plate**（车牌识别）：[Gitee](https://gitee.com/yuturuishi/PaddleOCR_Plate) · [GitHub](https://github.com/yuturuishi/PaddleOCR_Plate)
 

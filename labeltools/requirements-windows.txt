@@ -1,5 +1,0 @@
-numpy==1.26.4
-opencv-python==4.5.4.60
-pillow==10.3.0
-requests==2.31.0
-tqdm==4.67.1

@@ -11,8 +11,6 @@
 | Gitee | https://gitee.com/yuturuishi/ytstudio |
 | GitHub | https://github.com/yuturuishi/ytstudio |
 
-**开源协议：** MIT License，可自由商用。详见 `LICENSE`。
-
 ## 简介
 
 ytstudio 是一套面向 AI 视觉与音频算法的训练与部署工具集合。它以**模块化**方式组织：每个任务类型对应一个独立训练模块，配套免费公开数据集与示例脚本，开发者可快速完成「数据准备 → 模型训练 → 边缘部署」的完整流程。对于需要落地到瑞芯微硬件的场景，使用 `onnx2rknn` 即可将训练产出的 onnx 模型转换为 rknn 格式，直接在边缘端加速推理。
@@ -25,7 +23,6 @@ ytstudio 是一套面向 AI 视觉与音频算法的训练与部署工具集合�
 | Train_rk_yolo5 / Train_rk_yolo8 / Train_rk_yolo11 | 目标检测（边缘） | 适用于瑞芯微设备的 YOLO 模型训练框架 | 内置 |
 | onnx2rknn | 模型转换 | 在 x86 / arm 上将 onnx 模型转换为 rknn 模型 | 内置 |
 | Train_ResNet | 图像分类 | 基于 ResNet 的图片分类算法训练框架 | 内置 |
-| labeltools | 数据预处理 | 样本转换脚本 | 内置 |
 | Train_AudioNet | 音频分类 | 音频片段分类算法训练框架 | 已迁移独立仓库 |
 | Train_VideoNet | 视频分类 | 视频片段分类算法训练框架 | 已迁移独立仓库 |
 | Train_XcFaceNet | 人脸识别 | 人脸特征提取算法训练框架 | 已迁移独立仓库 |
@@ -41,7 +38,6 @@ ytstudio/
 ├── Train_rk_yolo5/  Train_rk_yolo8/  Train_rk_yolo11/  # 瑞芯微边缘 YOLO 训练框架
 ├── onnx2rknn/              # onnx → rknn 模型转换工具
 ├── Train_ResNet/          # 图像分类训练框架
-├── labeltools/            # 数据预处理脚本
 ├── Train_AudioNet/        # 音频分类（已迁移独立仓库）
 ├── Train_VideoNet/        # 视频分类（已迁移独立仓库）
 ├── Train_XcFaceNet/       # 人脸识别（已迁移独立仓库）
@@ -76,10 +72,11 @@ PyTorch + CUDA | Ultralytics YOLO | OpenCV / PIL / NumPy | RKNN Toolkit / ONNX R
 - **XcFaceNet**（人脸识别）：[Gitee](https://gitee.com/yuturuishi/XcFaceNet) · [GitHub](https://github.com/yuturuishi/XcFaceNet)
 - **PaddleOCR_Plate**（车牌识别）：[Gitee](https://gitee.com/yuturuishi/PaddleOCR_Plate) · [GitHub](https://github.com/yuturuishi/PaddleOCR_Plate)
 
-## 相关工具
+## 样本采集与标注
 
-- [视频分割图片工具 BXC_hs](https://gitee.com/yuturuishi/BXC_hs)
-- [图片标注样本工具 labelme](https://pan.quark.cn/s/7e6accce2a3e)
+推荐使用 **[ytlabel](https://gitee.com/yuturuishi/ytlabel)**（[GitHub](https://github.com/yuturuishi/ytlabel)）—— 集样本采集（视频抽帧）与标注于一体，支持图片 / 视频 / LabelMe 数据集导入、矩形 / 多边形标注，可直接导出 YOLO 格式数据集（含 train / val / test 切分与 `data.yaml`）。
+
+也可使用 [labelme](https://pan.quark.cn/s/7e6accce2a3e) 标注后导入 ytlabel 导出数据集。
 
 ## 免费训练数据集
 

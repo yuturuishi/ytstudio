@@ -11,5 +11,8 @@
 !/.gitignore
 
 # 当前已纳入版本控制的文件
-!/README.md
-!/yolo11n.pt
+!/hyp.Objects365.yaml
+!/hyp.VOC.yaml
+!/hyp.scratch-high.yaml
+!/hyp.scratch-low.yaml
+!/hyp.scratch-med.yaml

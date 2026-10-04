@@ -11,5 +11,22 @@
 !/.gitignore
 
 # 当前已纳入版本控制的文件
-!/README.md
-!/yolo11n.pt
+!/anchors.yaml
+!/yolov3-spp.yaml
+!/yolov3-tiny.yaml
+!/yolov3.yaml
+!/yolov5-bifpn.yaml
+!/yolov5-fpn.yaml
+!/yolov5-p2.yaml
+!/yolov5-p34.yaml
+!/yolov5-p6.yaml
+!/yolov5-p7.yaml
+!/yolov5-panet.yaml
+!/yolov5l6.yaml
+!/yolov5m6.yaml
+!/yolov5n6.yaml
+!/yolov5s-LeakyReLU.yaml
+!/yolov5s-ghost.yaml
+!/yolov5s-transformer.yaml
+!/yolov5s6.yaml
+!/yolov5x6.yaml

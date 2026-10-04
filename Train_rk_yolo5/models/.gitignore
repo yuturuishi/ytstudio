@@ -11,5 +11,14 @@
 !/.gitignore
 
 # 当前已纳入版本控制的文件
-!/README.md
-!/yolo11n.pt
+!/__init__.py
+!/common.py
+!/common_rk_plug_in.py
+!/experimental.py
+!/tf.py
+!/yolo.py
+!/yolov5l.yaml
+!/yolov5m.yaml
+!/yolov5n.yaml
+!/yolov5s.yaml
+!/yolov5x.yaml

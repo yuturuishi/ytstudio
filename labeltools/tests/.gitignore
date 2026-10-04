@@ -11,5 +11,5 @@
 !/.gitignore
 
 # 当前已纳入版本控制的文件
-!/README.md
-!/yolo11n.pt
+!/__init__.py
+!/list2list.py

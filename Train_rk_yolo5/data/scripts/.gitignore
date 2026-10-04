@@ -11,5 +11,7 @@
 !/.gitignore
 
 # 当前已纳入版本控制的文件
-!/README.md
-!/yolo11n.pt
+!/download_weights.sh
+!/get_coco.sh
+!/get_coco128.sh
+!/get_imagenet.sh

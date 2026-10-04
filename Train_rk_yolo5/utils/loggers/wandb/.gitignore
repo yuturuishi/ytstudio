@@ -12,4 +12,8 @@
 
 # 当前已纳入版本控制的文件
 !/README.md
-!/yolo11n.pt
+!/__init__.py
+!/log_dataset.py
+!/sweep.py
+!/sweep.yaml
+!/wandb_utils.py

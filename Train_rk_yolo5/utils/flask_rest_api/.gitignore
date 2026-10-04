@@ -12,4 +12,5 @@
 
 # 当前已纳入版本控制的文件
 !/README.md
-!/yolo11n.pt
+!/example_request.py
+!/restapi.py

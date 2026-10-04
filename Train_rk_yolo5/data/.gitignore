@@ -11,5 +11,14 @@
 !/.gitignore
 
 # 当前已纳入版本控制的文件
-!/README.md
-!/yolo11n.pt
+!/Argoverse.yaml
+!/GlobalWheat2020.yaml
+!/ImageNet.yaml
+!/Objects365.yaml
+!/SKU-110K.yaml
+!/VOC.yaml
+!/VisDrone.yaml
+!/coco.yaml
+!/coco128-seg.yaml
+!/coco128.yaml
+!/xView.yaml

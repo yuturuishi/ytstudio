@@ -20,6 +20,7 @@ ytstudio is a modular collection of training and deployment tools for AI vision 
 | Module | Task | Description | Status |
 |---|---|---|---|
 | Train_yolo8 / Train_yolo11 / Train_yolo26 | Object detection | Official YOLO training frameworks | Built-in |
+| Train_DFINE | End-to-end object detection | D-FINE-based (Apache-2.0) NMS-free detection framework; exports to ONNX / OpenVINO / TensorRT | Built-in |
 | Train_rk_yolo5 / Train_rk_yolo8 / Train_rk_yolo11 | Edge object detection | YOLO training frameworks for Rockchip devices | Built-in |
 | onnx2rknn | Model conversion | Convert onnx models to rknn on x86 / arm | Built-in |
 | Train_ResNet | Image classification | ResNet-based image classification training framework | Built-in |
@@ -35,6 +36,7 @@ ytstudio is organized by task type into multiple independent training modules:
 ```
 ytstudio/
 ├── Train_yolo8/  Train_yolo11/  Train_yolo26/    # Official YOLO training frameworks (object detection)
+├── Train_DFINE/          # D-FINE end-to-end NMS-free detection framework (Apache-2.0)
 ├── Train_rk_yolo5/  Train_rk_yolo8/  Train_rk_yolo11/  # Rockchip edge YOLO training frameworks
 ├── onnx2rknn/              # onnx → rknn model conversion tool
 ├── Train_ResNet/          # Image classification training framework
@@ -43,6 +45,20 @@ ytstudio/
 ├── Train_XcFaceNet/       # Face recognition (migrated to standalone repo)
 └── Train_PaddleOCR_Plate/ # License-plate recognition (migrated to standalone repo)
 ```
+
+## Train_DFINE
+
+`Train_DFINE` is a localized fork of [Peterande/D-FINE](https://github.com/Peterande/D-FINE) (Apache-2.0), providing a reproducible pipeline: train on your own dataset → export ONNX → convert to OpenVINO / TensorRT. See the module's `README.md` for details.
+
+- **License**: The D-FINE core framework is **Apache-2.0**, free for learning, research, and commercial use with no AGPL network-service terms — more permissive for closed-source distribution than YOLO (Ultralytics AGPL-3.0). This module's own training code inherits ytstudio's MIT; **user-trained weights are labeled "self-owned" (自有)**.
+- **Usage**: High-accuracy general object detection — train a dedicated model on your own dataset and export it as ONNX / OpenVINO / TensorRT for deployment on server GPUs or x86 edge devices.
+- **Capabilities**
+  - End-to-end detection with **no NMS** post-processing, simplifying the deployment chain;
+  - 5 official COCO pretrained weights (n / s / m / l / x), supporting fine-tuning or training from scratch;
+  - COCO-format custom datasets, with a built-in YOLO → COCO batch conversion tool;
+  - One-click export: ONNX (dynamic batch, opset 17) → OpenVINO IR (static fp32, target runtime 2024.6) → TensorRT engine (static fp32);
+  - Validated on 13 security / behavior-analysis datasets (flame & smoke, rat, dust, fighting, student states, sleep-on-duty, phone, climbing, helmet, dense crowd, etc.).
+- **Commercial Value**: Apache-2.0 permits free commercial use and closed-source distribution; NMS-free design simplifies inference; high-accuracy detection fits security surveillance, industrial inspection, and behavior analysis; exported OpenVINO / TensorRT models plug directly into commercial systems such as rebekah.
 
 ## Tech Stack
 
@@ -105,6 +121,7 @@ ytstudio's own code is released under the MIT License; keep the copyright notice
 ### Third-party dependency compliance
 
 - **Ultralytics (AGPL-3.0)**: training models with it and exporting to ONNX / RKNN for deployment on your own hardware is not bound by AGPL's network-service terms; but if you offer Ultralytics software itself as a closed-source product, private deployment, SaaS, or edge/embedded device, you must comply with Ultralytics' license terms or purchase its Enterprise License. ytstudio's MIT license does not cover that obligation.
+- **D-FINE (Apache-2.0)**: unlike YOLO (Ultralytics AGPL-3.0), D-FINE uses the Apache-2.0 license, free for commercial use and closed-source distribution without AGPL network-service concerns. `Train_DFINE` is based on Peterande/D-FINE; D-FINE's own license obligations follow Apache-2.0, and user-trained weights are labeled "self-owned" (自有).
 - **Models & datasets**: training datasets and pretrained weights referenced by this repo are governed by their provider's license; Ultralytics pretrained weights (`.pt`) are subject to AGPL / Enterprise license terms.
 - **Network requests**: ytstudio is a local training tool and does not send any user data or runtime info to any external server.
 - **Disclaimer**: users are responsible for the legality of their models, datasets, and deployment environment. ytstudio is provided "as is", without warranty.

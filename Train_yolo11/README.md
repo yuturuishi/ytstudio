@@ -59,7 +59,7 @@ yolo export model=best.pt format=openvino
 
 
 ### mo命令将pt模型转换为openvino模型（方式二）
-* mo命令是openvino官方提供的模型转换工具（mo默认导出的时fp16精度的模型，也就是默认compress_to_fp16=True）
+* mo命令是openvino官方提供的模型转换工具（默认导出fp16精度的模型，也就是默认compress_to_fp16=True）
 ~~~
 //安装mo命令行，将onnx转换为openvino模型
 //依赖库：pip install openvino==2024.3.0 openvino-dev==2024.3.0 onnxruntime==1.19.0 onnx==1.16.1  -i https://pypi.tuna.tsinghua.edu.cn/simple

@@ -17,9 +17,9 @@ docker save -o x86-onnx2rknn.20250329.tar  x86-onnx2rknn:20250329
 docker run -d -i -t -u root --privileged -e LANG=C.UTF-8 x86-onnx2rknn:20250329 /bin/bash
 
 //用户你好，如果不想自行构建镜像，可以下载作者上传到网盘中的该镜像文件，下载镜像后，导入到docker，直接启动即可
-//镜像下载 （请下载x86-onnx2rknn.20250329.zip，解压后获得x86-onnx2rknn.20250329.tar）
-【夸克网盘】下载地址：https://pan.quark.cn/s/a3abced611b7
-【百度网盘】下载地址：https://pan.baidu.com/s/1SsDmaGZGer3gLJuWo9c85w 提取码: xcxc 
+//镜像下载链接：https://pan.quark.cn/s/e1c27069e57e
+（请下载x86-onnx2rknn.20250329.zip，解压后获得x86-onnx2rknn.20250329.tar）
+
 
 //镜像导入
 docker load -i x86-onnx2rknn.20250329.tar

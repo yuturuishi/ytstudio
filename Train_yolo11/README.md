@@ -59,12 +59,13 @@ yolo export model=best.pt format=openvino
 
 
 ### mo命令将pt模型转换为openvino模型（方式二）
-* mo命令是openvino官方提供的模型转换工具
+* mo命令是openvino官方提供的模型转换工具（mo默认导出的时fp16精度的模型，也就是默认compress_to_fp16=True）
 ~~~
 //安装mo命令行，将onnx转换为openvino模型
 //依赖库：pip install openvino==2024.3.0 openvino-dev==2024.3.0 onnxruntime==1.19.0 onnx==1.16.1  -i https://pypi.tuna.tsinghua.edu.cn/simple
 yolo export model=yolo11n.pt format=onnx
-mo --input_model yolo11n.onnx  --output_dir yolov8n_openvino_model
+mo --input_model yolo11n.onnx  --output_dir yolo11n_openvino_model --compress_to_fp16 False
+
 ~~~
 
 ### trtexec命令将pt模型转换为tensorrt模型
@@ -76,28 +77,8 @@ yolo export model=yolo11n.pt format=onnx
 trtexec --onnx=yolo11n.onnx --saveEngine=yolo11n.fp16.engine --fp16
 ~~~
 
-### yolo11训练相关文档
-* yolo11官方训练参数：https://docs.ultralytics.com/zh/modes/train/#train-settings
-* yolo11开源地址：https://github.com/ultralytics/ultralytics
-
-### 训练数据集（免费下载）
-* 训练数据集-夸克网盘下载地址：https://pan.quark.cn/s/5dcc2f724bcc
-* 检测密集人群数据集20250625
-* 检测明厨亮灶数据集20250625
-* 检测攀爬数据集20250624
-* 检测抽烟数据集20241012
-* 检测打架数据集20241012
-* 检测反光衣数据集20241013
-* 检测粉尘数据集20241013
-* 检测火焰烟雾数据集20241012
-* 检测人头和安全帽数据集20241013
-* 检测人体5动作-站着-摔倒-坐-深蹲-跑数据集20241012
-* 检测学生3状态数据集20241022
-* 检测睡岗数据集20241210
-* 检测手机数据集20251206
-* 猫狗2分类数据集-夸克网盘下载地址 https://pan.quark.cn/s/982dd16cb29d
-* 车型9分类数据集-夸克网盘下载地址 https://pan.quark.cn/s/f698d0e99a4b
-* 打鼾+不打鼾语音识别2分类数据集-夸克网盘下载地址：https://pan.quark.cn/s/4d83dabff0a6
+### yolo开源地址
+* yolo开源地址：https://github.com/ultralytics/ultralytics
 
 ### Windows系统安装Python虚拟环境
 ~~~

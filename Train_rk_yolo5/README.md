@@ -79,15 +79,3 @@ https://gitee.com/yuturuishi/ytstudio/tree/master/onnx2rknn
 * rk版yolo5代码和yolo5官方代码训练的模型是不通用的
 * 务必不要从yolo5的github官方仓库下载代码！！！本模块的代码来自于 https://github.com/airockchip/yolov5
 * https://github.com/airockchip/yolov5 来自于 https://github.com/ultralytics/yolov5 
-
-### 训练数据集（免费下载）
-* 训练数据集-夸克网盘下载地址：https://pan.quark.cn/s/5dcc2f724bcc
-* 检测抽烟数据集20241012
-* 检测打架数据集20241012
-* 检测反光衣数据集20241013
-* 检测粉尘数据集20241013
-* 检测火焰烟雾数据集20241012
-* 检测人体5动作-站着-摔倒-坐-深蹲-跑数据集20241012
-* 检测人头和安全帽数据集20241013
-* 检测睡岗数据集20241210
-* 检测学生3状态数据集20241022
